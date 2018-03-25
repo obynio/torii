@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file:///run/media/sybiload/DATA/Dev/android/newstheft/app/app.iml" filepath="/run/media/sybiload/DATA/Dev/android/newstheft/app/app.iml" />
-      <module fileurl="file:///run/media/sybiload/DATA/Dev/android/newstheft/newstheft.iml" filepath="/run/media/sybiload/DATA/Dev/android/newstheft/newstheft.iml" />
+      <module fileurl="file:///run/media/sybiload/DATA/dev/android/newstheft/app/app.iml" filepath="/run/media/sybiload/DATA/dev/android/newstheft/app/app.iml" />
+      <module fileurl="file:///run/media/sybiload/DATA/dev/android/newstheft/newstheft.iml" filepath="/run/media/sybiload/DATA/dev/android/newstheft/newstheft.iml" />
     </modules>
   </component>
 </project>
