@@ -15,10 +15,10 @@ public class Main implements IXposedHookLoadPackage
         if (!lpparam.packageName.equals("com.google.android.apps.magazines"))
             return;
 
-        Class<?> edition = XposedHelpers.findClass("com.google.apps.dots.android.newsstand.edition.Edition",
-                lpparam.classLoader);
+        Class<?> edition = XposedHelpers.findClass("com.google.apps.dots.android.newsstand.edition.Edition", lpparam.classLoader);
 
-        XposedHelpers.findAndHookMethod("com.google.apps.dots.android.newsstand.edition.LibrarySnapshot", lpparam.classLoader, "isPurchased", edition, new XC_MethodReplacement(){
+        XposedHelpers.findAndHookMethod("com.google.apps.dots.android.newsstand.edition.LibrarySnapshot", lpparam.classLoader, "isPurchased", edition, new XC_MethodReplacement()
+        {
             @Override
             protected Object replaceHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable
             {
