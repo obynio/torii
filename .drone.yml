@@ -3,3 +3,16 @@ pipeline:
     image: runmymind/docker-android-sdk:alpine-standalone
     commands:
       - ./gradlew assembleDebug
+
+  publish:
+    image: plugins/github-release
+    secrets: [ github_token ]
+    files:
+      - app/build/outputs/apk/debug/app/app-debug.apk
+    checksum:
+      - sha256
+    when:
+      event: tag
+      status: success
+      event: tag
+      branch: refs/tags/v*
