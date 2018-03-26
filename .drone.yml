@@ -8,7 +8,7 @@ pipeline:
     image: plugins/github-release
     secrets: [ github_token ]
     files:
-      - app/build/outputs/apk/debug/app/app-debug.apk
+      - app/build/outputs/apk/debug/app-debug.apk
     checksum:
       - sha256
     when:
