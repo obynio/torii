@@ -1,4 +1,4 @@
-package com.newstheft;
+package com.torii;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
@@ -15,7 +15,7 @@ public class Main implements IXposedHookLoadPackage
         if (!lpparam.packageName.equals("com.google.android.apps.magazines"))
             return;
 
-        Class<?> edition = XposedHelpers.findClass("com.google.apps.dots.android.newsstand.edition.Edition", lpparam.classLoader);
+        Class<?> edition = XposedHelpers.findClass("com.google.apps.dots.android.modules.model.Edition", lpparam.classLoader);
 
         XposedHelpers.findAndHookMethod("com.google.apps.dots.android.newsstand.edition.LibrarySnapshot", lpparam.classLoader, "isPurchased", edition, new XC_MethodReplacement()
         {

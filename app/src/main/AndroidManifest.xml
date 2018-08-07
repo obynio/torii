@@ -1,9 +1,5 @@
-<manifest package="com.newstheft"
-          xmlns:android="http://schemas.android.com/apk/res/android"
-          android:versionCode="2"
-          android:versionName="1.1.0">
-
-    <uses-sdk android:minSdkVersion="15"/>
+<manifest package="com.torii"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:icon="@mipmap/ic_launcher"
